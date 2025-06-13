@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QRCodeApp
 {
-    internal class ToolTipHelper
+    public class ToolTipHelper
     {
         public static void SetToolTips(ToolTip toolTip, TextBox txtUrl, TextBox txtTitle, TextBox txtFileName, TextBox txtSavePath)
         {

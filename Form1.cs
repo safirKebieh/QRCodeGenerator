@@ -1,5 +1,4 @@
 using System.Drawing.Imaging;
-using QRCoder;
 
 namespace QRCodeApp
 {
@@ -23,22 +22,20 @@ namespace QRCodeApp
 
             try
             {
-                // Generate QR Code
-                using var qrGen = new QRCodeGenerator();
-                using var data = qrGen.CreateQrCode(txtUrlTarget.Text, QRCodeGenerator.ECCLevel.Q);
-                using var qrRenderer = new BitmapByteQRCode(data);
-                byte[] qrBytes = qrRenderer.GetGraphic(20);
+                // Generate QR code as a byte array from the input URL
+                byte[] qrBytes = QrCodeImageHelper.GenerateQrCodeBytes(txtUrlTarget.Text);
 
-                // Convert to Bitmap
-                using var ms = new MemoryStream(qrBytes);
-                using var qrImage = new Bitmap(ms);
+                // Convert the QR code byte array into a Bitmap image
+                using var qrImage = QrCodeImageHelper.ConvertBytesToBitmap(qrBytes);
 
-                // Draw overlay text
-                DrawOverlayText(qrImage, txtQrTitle.Text);
+                // Draw optional overlay text (e.g., title) in the center of the QR code image
+                QrCodeImageHelper.DrawOverlayText(qrImage, txtQrTitle.Text);
+
 
                 // Save to file
                 string filePath = Path.Combine(txtSaveLocation.Text, txtFileName.Text + ".png");
-                qrImage.Save(filePath, ImageFormat.Png);
+                QrCodeImageHelper.SaveToFile(qrImage, filePath);
+
 
                 MessageBox.Show("QR Code saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -49,18 +46,7 @@ namespace QRCodeApp
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void DrawOverlayText(Bitmap bitmap, string text)
-        {
-            using Graphics g = Graphics.FromImage(bitmap);
-            using Font font = new Font("Arial", 24, FontStyle.Bold);
 
-            SizeF sz = g.MeasureString(text, font);
-            float x = (bitmap.Width - sz.Width) / 2;
-            float y = (bitmap.Height - sz.Height) / 2;
-
-            g.FillRectangle(Brushes.White, x - 10, y - 5, sz.Width + 20, sz.Height + 10);
-            g.DrawString(text, font, Brushes.Black, x, y);
-        }
 
         private void ResetForm()
         {
@@ -68,6 +54,8 @@ namespace QRCodeApp
             txtQrTitle.Clear();
             txtSaveLocation.Clear();
             txtFileName.Clear();
+
+            txtUrlTarget.Focus();
         }
     }
 }

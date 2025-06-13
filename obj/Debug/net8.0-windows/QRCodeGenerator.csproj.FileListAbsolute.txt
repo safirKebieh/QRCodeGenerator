@@ -21,3 +21,4 @@ C:\Users\safir\Desktop\QRCodeGenerator\QRCodeGenerator\obj\Debug\net8.0-windows\
 C:\Users\safir\Desktop\QRCodeGenerator\QRCodeGenerator\obj\Debug\net8.0-windows\QRCodeGenerator.pdb
 C:\Users\safir\Desktop\QRCodeGenerator\QRCodeGenerator\obj\Debug\net8.0-windows\QRCodeGenerator.genruntimeconfig.cache
 C:\Users\safir\Desktop\QRCodeGenerator\QRCodeGenerator\obj\Debug\net8.0-windows\ref\QRCodeGenerator.dll
+C:\Users\safir\Desktop\QRCodeGenerator\QRCodeGenerator\obj\Debug\net8.0-windows\QRCodeGenerator.sourcelink.json

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "1A2U587zBHI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\safir\\Desktop\\QRCodeGenerator\\QRCodeGenerator\\QRCodeGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\safir\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.6\\microsoft.win32.systemevents.9.0.6.nupkg.sha512",
+    "C:\\Users\\safir\\.nuget\\packages\\qrcoder\\1.6.0\\qrcoder.1.6.0.nupkg.sha512",
+    "C:\\Users\\safir\\.nuget\\packages\\system.drawing.common\\9.0.6\\system.drawing.common.9.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

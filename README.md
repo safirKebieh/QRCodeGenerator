@@ -2,7 +2,8 @@
 
 This is a simple Windows Forms application built in C# that generates a QR Code from a public URL.
 
-![image](https://github.com/user-attachments/assets/87d30576-2ae2-4dee-804d-f919cef7e390)
+![image](https://github.com/user-attachments/assets/c2082ed3-7412-429d-8330-c57da5f15c00)
+
 
 
 ## 🚀 Features

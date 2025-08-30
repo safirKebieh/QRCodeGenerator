@@ -1,0 +1,10 @@
+C:\Users\safir\Desktop\TestPublishing\QRCodeGenerator.exe
+C:\Users\safir\Desktop\TestPublishing\QRCodeGenerator.dll
+C:\Users\safir\Desktop\TestPublishing\QRCodeGenerator.deps.json
+C:\Users\safir\Desktop\TestPublishing\QRCodeGenerator.runtimeconfig.json
+C:\Users\safir\Desktop\TestPublishing\QRCodeGenerator.pdb
+C:\Users\safir\Desktop\TestPublishing\Microsoft.Win32.SystemEvents.dll
+C:\Users\safir\Desktop\TestPublishing\QRCoder.dll
+C:\Users\safir\Desktop\TestPublishing\System.Drawing.Common.dll
+C:\Users\safir\Desktop\TestPublishing\System.Private.Windows.Core.dll
+C:\Users\safir\Desktop\TestPublishing\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll

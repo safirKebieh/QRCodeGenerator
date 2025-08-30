@@ -1,6 +1,7 @@
 # QR Code Generator - WinForms App (C#)
 
 This is a simple Windows Forms application built in C# that generates a QR Code from a public URL.
+<img width="820" height="820" alt="MyRepo" src="https://github.com/user-attachments/assets/3e121382-1a54-4e19-beb3-c3d18dff30b4" />
 
 ![image](https://github.com/user-attachments/assets/c2082ed3-7412-429d-8330-c57da5f15c00)
 
